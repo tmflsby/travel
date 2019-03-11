@@ -39,9 +39,11 @@ export default {
     }
   },
   activated () {
+    console.log('---1')
     window.addEventListener('scroll', this.handleScroll)
   },
   deactivated () {
+    console.log('--2')
     window.removeEventListener('scroll', this.handleScroll)
   }
 }

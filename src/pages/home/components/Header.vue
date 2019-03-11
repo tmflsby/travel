@@ -3,10 +3,8 @@
     <div class="header-left">
       <div class="iconfont back-icon">&#xe624;</div>
     </div>
-    <div class="header-input">
-      <span class="iconfont">&#xe632;</span>
-      输入城市/景点/游玩主题
-    </div>
+    <span class="iconfont search-icon">&#xe632;</span>
+    <input type="search" class="header-input" placeholder="输入城市/景点/游玩主题">
     <router-link to="/city">
       <div class="header-right">
         {{this.city}}
@@ -33,22 +31,28 @@ export default {
     line-height: $headerHeight
     background: $bgColor
     color: #ffffff
+    position relative
     .header-left
       width: .64rem
       float: left
       .back-icon
         text-align: center
         font-size: .4rem
+    .search-icon
+      position absolute
+      top 0
+      left 1rem
+      color #8b7575
     .header-input
       flex: 1
       height: .64rem
       line-height: .64rem
       margin-left: .2rem
       margin-top: .12rem
-      padding-left: .2rem
+      padding-left: .6rem
       background: #ffffff
       border-radius  .1rem
-      color: #cccccc
+      color: #333
     .header-right
       min-width: 1.04rem
       padding: 0 .1rem

@@ -13,7 +13,7 @@
       </div>
     </div>
     <fade-animation>
-      <common-gallary :imgs="gallaryImgs" v-show="showGallary" @close="handleBannerClose"></common-gallary>
+      <common-gallary :imgs="bannerImgs" v-show="showGallary" @close="handleBannerClose"></common-gallary>
     </fade-animation>
   </div>
 </template>
@@ -26,7 +26,7 @@ export default {
   props: {
     sightName: String,
     bannerImg: String,
-    gallaryImgs: Array
+    bannerImgs: Array
   },
   data () {
     return {
