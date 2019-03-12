@@ -3,9 +3,9 @@
     <router-link tag="div" to="/" class="header-abs" v-show="showAbs">
       <div class="iconfont header-abs-back">&#xe624;</div>
     </router-link>
-    <div class="header-fixed" v-show="!showAbs">
+    <div class="header-fixed" v-show="!showAbs" :style="opacityStyle">
       <router-link to="/">
-        <div class="iconfont header-fixed-back" :style="opacityStyle">&#xe624;</div>
+        <div class="iconfont header-fixed-back">&#xe624;</div>
       </router-link>
       景点详情
     </div>
@@ -29,9 +29,7 @@ export default {
       if (top > 60) {
         let opacity = top / 140
         opacity = opacity > 1 ? 1 : opacity
-        this.opacityStyle = {
-          opacity
-        }
+        this.opacityStyle = {opacity}
         this.showAbs = false
       } else {
         this.showAbs = true
@@ -39,11 +37,9 @@ export default {
     }
   },
   activated () {
-    console.log('---1')
     window.addEventListener('scroll', this.handleScroll)
   },
   deactivated () {
-    console.log('--2')
     window.removeEventListener('scroll', this.handleScroll)
   }
 }
