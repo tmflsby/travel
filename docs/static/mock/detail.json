@@ -1,0 +1,27 @@
+{
+  "ret": true,
+  "data": {
+    "sightName": "故宫(AAAAA景区)",
+    "bannerImg": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_r_800x800_6edd8174.jpg",
+    "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_r_800x800_6edd8174.jpg", "http://img1.qunarzz.com/sight/p55/201211/04/fbcab3e5d6479ce893835fbb.jpg_r_800x800_6360f514.jpg", "http://img1.qunarzz.com/wugc/p123/201211/19/a2045d091f02b25493835fbb.png_r_800x800_c59f0eba.png", "http://img1.qunarzz.com/sight/p0/1410/9d/fe8109ab5df1c9c324e74284fa802e72.water.jpg_r_800x800_b9a5440a.jpg"],
+    "categoryList": [{
+      "title": "成人票",
+      "children": [{
+        "title": "成人三景点联票",
+        "children": [{
+          "title": "成人三景点联票 - 北京连锁店销售"
+        }, {
+          "title": "成人三景点联票 - 上海连锁店销售"
+        }]
+      }, {
+        "title": "成人五景点联票"
+      }]
+    }, {
+      "title": "学生票"
+    }, {
+      "title": "儿童票"
+    }, {
+      "title": "特惠票"
+    }]
+  }
+}
