@@ -30,8 +30,10 @@ export default {
   },
   methods: {
     getCityInfo () {
-      axios.get('https://raw.githubusercontent.com/tmflsby/mockdatas/master/city.json')
+      axios
+        .get('https://raw.githubusercontent.com/tmflsby/travel/master/static/mock/city.json')
         .then(this.handleGetCityInfoSucc)
+        .catch(error => console.log(error))
     },
     handleGetCityInfoSucc (res) {
       res = res.data

@@ -30,11 +30,14 @@ export default {
   },
   methods: {
     getDetailInfo () {
-      axios.get('https://raw.githubusercontent.com/tmflsby/mockdatas/master/detail.json?id=', {
-        params: {
-          id: this.$route.params.id
-        }
-      }).then(this.handleGetDataSucc)
+      axios
+        .get('https://raw.githubusercontent.com/tmflsby/travel/master/static/mock/detail.json?id=', {
+          params: {
+            id: this.$route.params.id
+          }
+        })
+        .then(this.handleGetDataSucc)
+        .catch(error => console.log(error))
     },
     handleGetDataSucc (res) {
       res = res.data
